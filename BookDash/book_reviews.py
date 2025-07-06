@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
-df_reviews = pd.read_csv("BookDash/datasets/customer_reviews.csv")
+df_reviews = pd.read_csv("datasets/customer_reviews.csv")
 df_top100_books = pd.read_csv("datasets/Top-100 Trending Books.csv")
 
 books = df_top100_books["book title"].unique()
